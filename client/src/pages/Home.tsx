@@ -39,14 +39,14 @@ export default function Home() {
             variants={item}
             className="font-display font-black text-5xl md:text-7xl lg:text-9xl leading-[0.9] tracking-tighter text-white mix-blend-difference"
           >
-            DOMAIN <br/>
+            WELCOME TO <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-primary to-red-900 drop-shadow-[0_0_10px_rgba(220,20,60,0.5)]">
-              EXPANSION
+              PUNEET MALHOTRA'S PERSONAL VOID
             </span>
           </motion.h1>
           
           <motion.p variants={item} className="text-muted-foreground font-mono text-sm md:text-lg max-w-2xl mt-6 border-l-2 border-primary pl-6 py-2">
-            Welcome to my personal void. I craft digital experiences with the precision of a sorcerer. 
+            I craft digital experiences with the precision of a sorcerer. 
             Merging high-performance code with striking aesthetics.
           </motion.p>
         </div>

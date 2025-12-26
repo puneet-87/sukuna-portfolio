@@ -1,7 +1,40 @@
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial } from "@react-three/drei";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Points, PointMaterial, Float } from "@react-three/drei";
 import { useState, useRef, useMemo } from "react";
-import * as random from "math-random";
+import * as THREE from "three";
+
+function SukunaCube() {
+  const meshRef = useRef<THREE.Mesh>(null);
+  const { mouse } = useThree();
+
+  useFrame((state) => {
+    if (meshRef.current) {
+      // Gentle floating and rotation
+      meshRef.current.rotation.x = state.clock.getElapsedTime() * 0.5;
+      meshRef.current.rotation.y = state.clock.getElapsedTime() * 0.3;
+      
+      // Interactive mouse follow
+      const targetX = mouse.x * 2;
+      const targetY = mouse.y * 2;
+      meshRef.current.position.x += (targetX - meshRef.current.position.x) * 0.1;
+      meshRef.current.position.y += (targetY - meshRef.current.position.y) * 0.1;
+    }
+  });
+
+  return (
+    <Float speed={2} rotationIntensity={1} floatIntensity={2}>
+      <mesh ref={meshRef}>
+        <octahedronGeometry args={[1, 0]} />
+        <meshStandardMaterial 
+          color="#ff0033" 
+          wireframe 
+          emissive="#ff0033"
+          emissiveIntensity={2}
+        />
+      </mesh>
+    </Float>
+  );
+}
 
 function Embers(props: any) {
   const ref = useRef<any>();
@@ -50,6 +83,8 @@ export function Background3D() {
       <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
         <fog attach="fog" args={['#050505', 5, 15]} />
         <ambientLight intensity={0.5} />
+        <pointLight position={[10, 10, 10]} intensity={1} color="#ff0033" />
+        <SukunaCube />
         <Embers />
       </Canvas>
       {/* Vignette Overlay */}
