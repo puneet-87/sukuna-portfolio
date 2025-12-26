@@ -1,0 +1,281 @@
+🔥 Domain Expansion Portfolio Website – Sukuna Theme (Jujutsu Kaisen)
+🩸 Concept Overview: “Domain Expansion – Malevolent Portfolio”
+
+Design and develop a dark, cursed-energy-inspired portfolio website themed around Sukuna’s Domain Expansion (Malevolent Shrine) from Jujutsu Kaisen.
+The site should feel intimidating, powerful, and immersive, while still remaining professional, readable, and recruiter-friendly.
+
+The website represents the developer as a rising sorcerer (fresher) mastering modern web technologies.
+
+🎯 Core Objectives
+
+Showcase technical skills, education, experience, and projects
+
+Deliver a cinematic first impression
+
+Use anime-inspired animations without violating accessibility
+
+Maintain high performance & responsiveness
+
+Built entirely with modern frontend tech
+
+🧠 Tech Stack (Strict)
+Frontend
+
+Next.js (App Router preferred)
+
+React.js
+
+TypeScript
+
+Animation & Interaction
+
+Barba.js → Smooth domain-style page transitions
+
+Three.js → 3D cursed symbols, shrine environment, aura effects
+
+Styling
+
+CSS Modules / Tailwind CSS
+
+Custom animation keyframes
+
+🧩 Website Structure
+/app
+ ├── page.tsx (Home – Domain Expansion)
+ ├── skills/page.tsx
+ ├── education/page.tsx
+ ├── experience/page.tsx
+ ├── projects/page.tsx
+ ├── contact/page.tsx
+ └── layout.tsx
+/components
+ ├── DomainIntro.tsx
+ ├── Navbar.tsx
+ ├── SkillCard.tsx
+ ├── ProjectCard.tsx
+ ├── FeedbackBox.tsx
+ ├── ThreeScene.tsx
+ └── PageTransition.tsx
+
+🏯 Page-by-Page Design & Functionality
+🔥 Homepage – “Domain Expansion Activated”
+
+First Load Animation
+
+Screen darkens
+
+Red cursed markings appear
+
+Text animation:
+
+“Domain Expansion: Malevolent Portfolio”
+
+Background Three.js shrine slowly emerges
+
+Key Elements
+
+Animated Sukuna-inspired sigils
+
+Floating cursed particles
+
+CTA: “Enter Domain”
+
+Three.js
+
+Rotating cursed circle
+
+Low-poly shrine silhouette
+
+Subtle camera movement
+
+⚔️ Skills Section – “Cursed Techniques”
+
+Skills Displayed
+
+Python
+
+HTML
+
+CSS
+
+JavaScript
+
+UI Concept
+
+Each skill as a cursed seal
+
+Hover effect: seal glows red, pulses
+
+Click reveals proficiency meter
+
+Animation
+
+Seal unlock animation
+
+Smoke / curse energy burst (CSS + Three.js overlay)
+
+🎓 Education – “Sorcerer Training”
+
+Content
+
+Diploma in Computer Science Engineering
+
+Design
+
+Scroll-based reveal
+
+Vertical parchment / ancient scroll effect
+
+Red glowing divider lines
+
+🧑‍💻 Experience – “Awakening Phase (Fresher)”
+
+Status
+
+Fresher with relevant experience
+
+Presentation
+
+Timeline layout
+
+Nodes glow when active
+
+Labels:
+
+Academic projects
+
+Self-learning
+
+Practical implementations
+
+🧪 Projects – “Cursed Creations”
+
+Each project card includes:
+
+Project title
+
+Description
+
+Tech stack used
+
+Outcome / impact
+
+Animations
+
+Card slices open (domain cut effect)
+
+Hover: cursed aura outline
+
+Optional modal with screenshots
+
+📩 Contact Page – “Summon the Sorcerer”
+
+Form Fields
+
+Name
+
+Email
+
+Message
+
+Submit Button
+
+Visuals
+
+Button glows on hover
+
+Submission animation:
+
+Curse seal closes
+
+“Message Received” appears
+
+Validation
+
+Client-side validation
+
+Accessible labels & ARIA roles
+
+⭐ Feedback Box – “Judgement by the Domain”
+
+Features
+
+Star rating (1–5)
+
+Comment input
+
+Submit feedback
+
+Interaction
+
+Stars light up with cursed energy
+
+Feedback appears as floating text fragments (optional)
+
+🌀 Page Transitions (Barba.js)
+
+Slash-style wipe transitions
+
+Red line cuts screen during route change
+
+Fade + distortion effects
+
+Smooth scroll restoration
+
+🎨 Color Palette
+Purpose	Color
+Background	#0b0b0f (Near Black)
+Primary Red	#c1121f
+Accent Glow	#ff0033
+Text	#f5f5f5
+Muted Text	#9ca3af
+♿ Accessibility Requirements
+
+Semantic HTML
+
+ARIA labels on forms
+
+Keyboard navigation support
+
+Motion-reduction support (prefers-reduced-motion)
+
+High contrast text
+
+🚀 Performance Optimization
+
+Next.js SSR & code splitting
+
+Lazy-load Three.js scenes
+
+Reduce particle count on mobile
+
+Responsive camera scaling
+
+📦 Deployment
+
+Platform: Vercel (preferred) or Netlify
+
+Environment: Production build
+
+Mobile-first testing
+
+📄 Deliverables
+
+Fully functional portfolio website
+
+Deployed live link
+
+README.md including:
+
+Setup instructions
+
+Tech stack
+
+Design philosophy
+
+Performance notes
+
+🩸 Final Instruction for Replit AI
+
+Build a Next.js + TypeScript portfolio website themed around Sukuna’s Domain Expansion from Jujutsu Kaisen.
+The site must be immersive, animated, responsive, and professional, using Barba.js for transitions and Three.js for 3D cursed visuals, while showcasing skills, education, experience, projects, contact, and feedback functionality.
